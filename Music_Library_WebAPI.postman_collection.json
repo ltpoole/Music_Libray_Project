@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "617ad8d1-75a4-4932-84e0-285f34b3ab95",
+		"name": "Music_Library_WebAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30821759"
+	},
+	"item": [
+		{
+			"name": "Get_All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7081/api/Songs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_By_Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7081/api/Songs/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_By_Id_Not_Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7081/api/Songs/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add_Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"4\",\r\n    \"Title\" : \"Hustlin'\",\r\n    \"Artist\" : \"Rick Ross\",\r\n    \"Album\" : \"Port of Miami\",\r\n    \"ReleaseDate\" : \"2006-08-08T00:00:00\",\r\n    \"Genre\" : \"Hip-Hop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7081/api/Songs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\" : \"1\",\r\n    \"Title\" : \"The Story of O.J.\",\r\n    \"Artist\" : \"Jay-Z\",\r\n    \"Album\" : \"4:44\",\r\n    \"ReleaseDate\" : \"2017-06-30\",\r\n    \"Genre\" : \"Hip-Hop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7081/api/Songs/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7081/api/Songs/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Not_Found",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7081/api/Songs/11",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7081",
+					"path": [
+						"api",
+						"Songs",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

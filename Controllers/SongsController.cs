@@ -43,7 +43,7 @@ namespace MusicLibraryWebAPI.Controllers
         {
             _context.Songs.Add(song);
             _context.SaveChanges();
-            return StatusCode(201, song);
+            return StatusCode(201);
         }
 
         // PUT api/Songs/5
