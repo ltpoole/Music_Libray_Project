@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MusicLibraryWebAPI.Data;
+using MusicLibraryWebAPI.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,33 +17,33 @@ namespace MusicLibraryWebAPI.Controllers
             _context = context;
         }
 
-        // GET: api/<SongsController>
+        // GET: api/Songs
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<SongsController>/5
+        // GET api/Songs/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<SongsController>
+        // POST api/Songs
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Song song)
         {
         }
 
-        // PUT api/<SongsController>/5
+        // PUT api/Songs/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<SongsController>/5
+        // DELETE api/Songs/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
