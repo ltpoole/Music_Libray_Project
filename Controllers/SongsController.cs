@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MusicLibraryWebAPI.Data;
-using MusicLibraryWebAPI.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -33,7 +32,7 @@ namespace MusicLibraryWebAPI.Controllers
 
         // POST api/Songs
         [HttpPost]
-        public void Post([FromBody] Song song)
+        public void Post([FromBody] string value)
         {
         }
 
